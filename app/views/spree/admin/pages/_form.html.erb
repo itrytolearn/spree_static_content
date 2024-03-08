@@ -41,6 +41,13 @@
       </div>
 
       <div class="checkbox">
+        <%= f.label :show_on_intranet do %>
+          <%= f.check_box :show_on_intranet %>
+          <%= Spree::Page.human_attribute_name(:show_on_intranet) %>
+        <% end %>
+      </div>
+
+      <div class="checkbox">
         <%= f.label :show_in_sidebar do %>
           <%= f.check_box :show_in_sidebar %>
           <%= Spree::Page.human_attribute_name(:show_in_sidebar) %>
