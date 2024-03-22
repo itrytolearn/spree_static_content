@@ -1,0 +1,9 @@
+<h1>Intranet</h1>
+
+<ul>
+    <% @collection.intranet_links.each do |page| %>
+        <li>
+            <%= link_to page.title, spree.admin_intranet_url(page) %>    
+        </li>
+    <% end %>
+</ul>  
