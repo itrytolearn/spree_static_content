@@ -8,7 +8,7 @@ module Spree
       end
 
       def index
-        @pages = Spree::Page.visible.where(show_on_intranet: false)
+        @pages = Spree::Page.visible
       end
 
   private
